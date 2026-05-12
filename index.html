@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Агенство по недвижимости</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />  
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 70%;
+            
+        }
+        
+        body {
+            background: none;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .autoplay-progress {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            z-index: 10;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--swiper-theme-color);
+        }
+        
+        .autoplay-progress svg {
+            --progress: 0;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            stroke-width: 4px;
+            stroke: var(--swiper-theme-color);
+            fill: none;
+            stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+            stroke-dasharray: 125.6;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="site-header">
+        <div class="header-wrapper">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex align-items-center">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/site-logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown text-dark">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Услуги
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./dubai.html">Арендовать</a></li>
+                                    <li><a class="dropdown-item" href="#">Продать</a></li>
+                                    <li><a class="dropdown-item" href="./otziv.html">Оценка недвижимости</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item text-dark">
+                                <a class="nav-link active" aria-current="page" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item text-dark">
+                                <a class="nav-link" href="#">Блог</a>
+                            </li>
+                            
+                            <li class="nav-item text-dark">
+                                <a class="nav-link disabled" aria-disabled="true">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center column-gap-3">
+                            <a class="" href="">
+                                <img src="./images/serch.svg" alt="">
+                            </a>
+                            
+                            <a class="" href="">
+                                <img src="./images/hearth.svg" alt="">
+                            </a>
+                            
+                            <a class="" href="">
+                                <img src="./images/Call.svg" alt="">
+                            </a>
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-light rounded-bottom-pill border-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ru
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Eng</a></li>
+                                    <li><a class="dropdown-item" href="#">Uzb</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </nav>    
+        </div>
+    </header>
+    
+    <main class="site-main">
+        <section class="hero-section">
+            
+            <div class="container">
+                
+                <div class="hero-wrapper">
+                    
+                    <div class="hero-texts">
+                        <h1 class="text-light w-auto">
+                            Найдите идеальное место для жизни
+                        </h1>
+                        <p class="text-light">
+                            Откройте двери в новое будущее с нами
+                        </p>
+                        
+                        <button class="btn-hero btn py-3 px-5 rounded-0">
+                            Подробнее
+                        </button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="about-site">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-top row">
+                        <div class="about-text col-12 col-md-8 col-lg-6 taxt">
+                            <h2 class="text-dark">
+                                О компании 
+                                <br>
+                                <span>
+                                    RMC DE LUXE
+                                </span>
+                            </h2>
+                        </div>
+                        
+                        <div class="about-text-two col-12 col-md-8 col-lg-6">
+                            <div class="servises row">
+                                
+                                <button class="col-4">
+                                    Аренда
+                                </button>
+                                
+                                <button class="col-4">
+                                    Купля - продажа
+                                </button>
+                                <button class="col-4"> 
+                                    Управление
+                                </button>                                                   
+                            </div>
+                            <div class="att-desc">
+                                <p class="text-dark">
+                                    Широкий выбор объектов: Мы предлагаем разнообразные варианты аренды – от квартир и домов до коммерческих помещений, удовлетворяющие любые потребности 
+                                    <br>
+                                    Надежные арендаторы: Проведение тщательной проверки и отбора арендаторов для обеспечения стабильного дохода и минимизации рисков
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/tom.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/divan.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/kuhnya.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="autoplay-progress">
+                            <svg viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="20"></circle>
+                            </svg>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="dubai-section">
+            <div class="container">
+                <div class="dubai-wrapper row g-5">
+                    
+                    <div class="dubai-hero col-12 col-md-8 col-lg-6">
+                        <h2 class="pb-5 m-0 text-dark fw-bold display-6">
+                            Инвестиции в
+                            <br>
+                            недвижимость в Дубае
+                        </h2>
+                        
+                        <div class="dubai-descs text-dark row-gap-3">
+                            <p>
+                                Недвижимость в Дубае предоставляет отличные возможности для получения стабильного дохода и увеличения капитала
+                            </p>
+                            <p>
+                                Полный цикл инвестиций: От анализа рынка и подбора объектов до управления инвестициями и их реализации.
+                            </p>
+                            <p>
+                                Наши эксперты помогут вам на всех этапах инвестиционного процесса, обеспечивая высокое качество обслуживания и надежность.
+                            </p>
+                            <p>
+                                Наши услуги включают управление вашей инвестиционной недвижимостью, обеспечивая её сохранность и стабильный доход. Мы берем на себя все аспекты управления, включая подбор и проверку арендаторов, техническое обслуживание, финансовую отчетность и юридическую поддержку.
+                            </p>
+                        </div>
+                        <button class="dubai-btn">
+                            <a class="text-decoration-none text-light" href="./dubai.html">
+                                Подробнее
+                            </a>
+                        </button>
+                    </div>
+                    
+                    <div class="dubai-images col-12 col-md-8 col-lg-6">
+                        <img src="./images/dubai-img.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="buy">
+            <div class="container">
+                <h2 class="buy-title">
+                    Что входит в услугу управления недвижимостью
+                </h2>
+                <div class="buys row text-dark">
+                    <!-- 1 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Проверка арендаторов (кредитная история, рекомендации)
+                        </p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Подготовка и подписание договоров аренды       
+                        </p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Сбор арендной платы    
+                        </p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Обработка запросов и жалоб арендаторов
+                        </p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Контроль соблюдения условий аренды    
+                        </p>
+                    </div>
+                    <!-- 6 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Регулярное техническое обслуживание  
+                        </p>
+                    </div>
+                    <!-- 7 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Организация и проведение ремонтных работ    
+                        </p>
+                    </div>
+                    <!-- 8 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Контроль за состоянием недвижимости   
+                        </p>
+                    </div>
+                    <!-- 9 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                        <p class="d-flex align-items-center column-gap-3 pt-3">
+                            <img src="./images/chek.svg" alt="">
+                            Подбор надежных арендаторов   
+                        </p>
+                    </div>
+                    <!-- 10 -->
+                    <div class="buys-item col-12 col-md-8 col-lg-6 border">
+                    </div>
+                </div>    
+            </div>
+        </section>
+        
+        
+        <section class="advantages">
+            <div class="container">
+                <h2 class="">
+                    Наши преимущетсва
+                </h2>
+                <div class="advantages-wrapper">
+                    <ul class="advantages-list list-unstyled row">
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <div class="advantages-texts">
+                                <h3 class="text-dark">
+                                    Опыт и профессионализм
+                                </h3>
+                                <p class="text-dark">
+                                    Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг
+                                </p>
+                            </div>
+                        </li>
+                        <!-- 2 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <img class="img-fluid" src="./images/advantagesone.png" alt="">
+                        </li>
+                        <!-- 3 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <div class="advantages-texts">
+                                <h3 class="text-dark">
+                                    Опыт и профессионализм
+                                </h3>
+                                <p class="text-dark">
+                                    Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг
+                                </p>
+                            </div>
+                        </li>
+                        <!-- 4 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <img class="img-fluid" src="./images/advantagestwo.png" alt="">
+                        </li>
+                        <!-- 5 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <div class="advantages-texts">
+                                <h3 class="text-dark">
+                                    Опыт и профессионализм
+                                </h3>
+                                <p class="text-dark">
+                                    Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг
+                                </p>
+                            </div>
+                        </li>
+                        <!-- 6 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <img class="img-fluid" src="./images/advantagesthree.png" alt="">
+                        </li>
+                        <!-- 7 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <div class="advantages-texts">
+                                <h3 class="text-dark">
+                                    Опыт и профессионализм
+                                </h3>
+                                <p class="text-dark">
+                                    Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг
+                                </p>
+                            </div>
+                        </li>
+                        <!-- 8 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <img class="img-fluid" src="./images/advantagesfour.png" alt="">
+                        </li>
+                        <!-- 9 -->
+                        <li class="advantages-item col-12 col-md-6 col-lg-4">
+                            <div class="advantages-texts">
+                                <h3 class="text-dark">
+                                    Опыт и профессионализм
+                                </h3>
+                                <p class="text-dark">
+                                    Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="text-dark">
+                    Наши преимущетсва
+                </h2>
+                
+                <ul class="list-unstyled row">
+                    <li class="col-12 col-md-8 col-lg-6 col-xl-4 ">
+                        <img width="400px" src="./images/safa.png" alt="">
+                    </li>
+                    <li class="col-12 col-md-8 col-lg-6 col-xl-4 ">
+                        <img width="400px" src="./images/safatwp.png" alt="">
+                    </li>
+                    <li class="col-12 col-md-8 col-lg-6 col-xl-4 ">
+                        <img width="400px" src="./images/dfadgad.png" alt="">
+                    </li>
+                </ul>
+                
+                <a class="kj" href="./allcards.html">
+                    Смотреть все
+                </a>
+                
+            </div>
+        </section>
+        
+        <section class="what-section">
+            <div class="container">
+                <div class="what-wrapper row flex-md-wrap-reverse flex-sm-wrap-reverse flex-wrap-reverse justify- align-items-center justify-content-center">
+                    
+                    <div class="what-hero col-12 col-md-8 col-lg-6">
+                        <h2 class="text-dark">
+                            Остались вопросы?
+                            <br>
+                            Свяжитесь с нами
+                        </h2>
+                        
+                        <div class="inpoots row">
+                            
+                            <form action="#">
+                                <input class="what-inp text-dark col-12" type="text" placeholder="Ф.И.О">
+                                
+                                <input class="what-inp text-dark col-12" type="text" placeholder="Номер телефона">
+                                
+                                <input class="what-inp text-dark col-12" type="email" placeholder="E-mail">
+                                
+                                <input class="what-inp text-dark col-12 mb-5" type="text" placeholder="Ваш вопрос">
+                                
+                                <a class="inpoots-link" href="./">
+                                    Отправить
+                                </a>
+                            </form>
+                            
+                        </div>
+                    </div>
+                    
+                    <img class="col-12 col-md-8 col-lg-6" src="./images/mnogo.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="text-dark">
+                    Блог
+                </h2>
+                
+                <ul class="b-list row list-unstyled justify-content-center">
+                    
+                    <li class="b-item col-12 col-md-6 col-lg-3">
+                        <img class="img-fluid" src="./images/last.png" alt="">
+                        <h3 class="b-title text-dark">
+                            Тенденции и прогнозы рынка недвижимости на 2024 год
+                        </h3>
+                        <a class="b-item-link d-flex d-block align-items-center" href="./blog.html">
+                            Подробнее
+                            <img src="./images/strel.svg" alt="">
+                        </a>
+                    </li>
+                    
+                    <li class="b-item col-12 col-md-6 col-lg-3">
+                        <img class="img-fluid" src="./images/most.png" alt="">
+                        <h3 class="b-title text-dark">
+                            Лучшие районы для инвестиций в недвижимость
+                        </h3>
+                        <a class="b-item-link d-flex d-block align-items-center" href="./blog.html">
+                            Подробнее
+                            <img src="./images/strel.svg" alt="">
+                        </a>
+                    </li>
+                    
+                    <li class="b-item col-12 col-md-6 col-lg-3">
+                        <img class="img-fluid" src="./images/balkon.png" alt="">
+                        <h3 class="b-title text-dark">
+                            Топ-10 новых 
+                            жилых комплексов
+                        </h3>
+                        <a class="b-item-link d-flex d-block align-items-center" href="./blog.html">
+                            Подробнее
+                            <img src="./images/strel.svg" alt="">
+                        </a>
+                    </li>
+                    
+                    <li class="b-item col-12 col-md-6 col-lg-3">
+                        <img class="img-fluid" src="./images/kvart.png" alt="">
+                        <h3 class="b-title text-dark">
+                            Элитные апартаменты становятся всё более популярными
+                        </h3>
+                        <a class="b-item-link d-flex d-block align-items-center" href="./blog.html">
+                            Подробнее
+                            <img src="./images/strel.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                
+                <a class="blogs-link d-block mx-auto" href="./allblogs.html">
+                    Все статьи
+                </a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top d-flex align-items-center justify-content-sm-between py-5">
+                    <a href="#">
+                        <img src="./images/site-logo.svg" alt="">
+                    </a>
+                    <div class="socials d-flex align-items-center column-gap-2">
+                        <a class="" href="#">
+                            <img src="./images/tg.svg" alt="">
+                        </a>
+                        <a class="" href="#">
+                            <img src="./images/insta.svg" alt="">
+                        </a>
+                        <a class="" href="#">
+                            <img src="./images/what.svg" alt="">
+                        </a>
+                        <a class="" href="#">
+                            <img src="./images/facebook_line.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <hr class="text-secondary my-4">
+                <ul class="list-unstyled d-flex align-items-center row">
+                    <!-- 1 -->
+                    <li class="col-6 col-md-3">
+                        <h3 class="footer-select">
+                            Услуги
+                        </h3>
+                        <div class="footer-desc row-gap-3">
+                            <a class="footer-link d-block" href="./harhil.html">
+                                Купить
+                            </a>
+                            <a class="footer-link d-block" href="./harhil.html">
+                                Арендовать
+                            </a>
+                            <a class="footer-link d-block" href="./harhil.html">
+                                Продать
+                            </a>
+                            <a class="footer-link d-block" href="./otziv.html">
+                                Посмотреть отзывы
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 2 -->
+                    <li class="col-6 col-md-3">
+                        <h3 class="footer-select">
+                            Недвижимость
+                        </h3>
+                        <div class="footer-desc row-gap-3">
+                            <a class="footer-link d-block" href="./kvartiri.html">
+                                Квартиры
+                            </a>
+                            <a class="footer-link d-block" href="">
+                                Новостройки
+                            </a>
+                            <a class="footer-link d-block" href="">
+                                Дома и участки
+                            </a>
+                            <a class="footer-link d-block" href="">
+                                Коммерческая
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 3 -->
+                    <li class="col-6 col-md-3">
+                        <h3 class="footer-select">
+                            Компания
+                        </h3>
+                        <div class="footer-desc row-gap-3">
+                            <a class="footer-link d-block" href="">
+                                О нас
+                            </a>
+                            <a class="footer-link d-block" href="">
+                                Блог
+                            </a>
+                            <a class="footer-link d-block" href="">
+                                Контакты
+                            </a>
+                            <a class="footer-link d-block" href="">
+                                Связаться
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="col-6 col-md-3">
+                        <h3 class="footer-select">
+                            Другое
+                        </h3>
+                        <div class="footer-desc row-gap-3">
+                            <a class="footer-link d-block" href="">
+                                Ипотечный калькулятор
+                            </a>
+                            <a class="footer-link d-block" href="">
+                                Инвестиции в недвижимость в Дубае
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <hr class="text-secondary my-4">
+                <div class="footer-bottom d-flex align-items-center justify-content-sm-between pb-5">
+                    <p class="text-secondary">
+                        2024 © RMC De Luxe real estate LLC. Все права защищены
+                    </p>
+                    <a href="#">
+                        <img src="./images/logofooter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./boostrab/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
+        });
+        
+    </script>
+    
+</body>
+</html>

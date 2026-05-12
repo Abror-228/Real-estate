@@ -1,0 +1,401 @@
+@import "./bootstrap.scss";
+
+
+.btn-hero {
+    background-color: #E1AF93;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    
+}
+
+
+.hero-texts {
+    width: auto;
+    max-width: 716px;
+    padding: 382px 0px 70px 0px;
+    h1 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 70px;
+        line-height: 70px;
+        letter-spacing: 5%;
+    }
+}
+
+.dubai-hero {
+    padding-top: 100px;
+}
+.dubai-images {
+    padding-bottom: 40px;
+}
+
+.dubai-section {
+    background-color: #EDF3F5;
+}
+
+.dubai-btn {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    padding: 12px 65px;
+    background-color: #E1AF93;
+    border: none;
+}
+
+.about-site {
+    padding-block: 240px;
+}
+
+.d-hero-section {
+    background-image: url("../../images/dubaibgi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px, 300px ;
+    
+}
+
+.hero-section {
+    background-image: url("../../images/bgh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px, 300px ;
+    
+}
+
+.about-text {
+    h2 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 55px;
+        line-height: 70px;
+        letter-spacing: 0%;
+        
+        
+        span {
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 55px;
+            line-height: 70px;
+            letter-spacing: 0%;
+            color: #E1AF93;
+        }
+    }
+}
+
+.servises {
+    border-bottom: 1px solid #EAEAEA;
+    button {
+        text-decoration-line: none;
+        color: #858585;
+        height: 50px;
+        background: none;
+        border: none;
+    }
+    
+    button:hover {
+        text-decoration-line: none;
+        border-bottom: 3px solid #E1AF93;
+        border-bottom-width: 74px;
+        background: none;
+        border: none;
+    }
+}
+
+.advantages {
+    padding-bottom: 250px;
+}
+
+
+.advantages-texts {
+    padding: 91px 30px 92px 30px;
+    width: 407px;
+}
+
+
+.bur-hero-b {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    width: 710px;
+}
+
+.dh {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 65px;
+    line-height: 70px;
+    letter-spacing: 0%;
+    color: #fff;
+    width: auto;
+}
+
+.houses-list {
+    position: relative;
+}
+
+
+
+.hp {
+    position: absolute;
+}
+
+.house-link {
+    background-color: #E1AF93;
+    padding: 12px 59px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+}
+
+.site-footer {
+    background-color: #F7F7F7;
+}
+
+.footer-select {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #333333;
+}
+
+.footer-desc {
+    row-gap: 16px;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #333333;
+    text-decoration-line: none;
+}
+
+
+
+
+.bur-hero-b-item {
+    border-left: 3px solid #E1AF93;
+    width: 285px;
+    justify-content: space-between;
+}
+
+.bur-wrapper {
+    align-items: center;
+    padding-block: 250px;
+}
+
+.bur-link {
+    padding: 12px 65px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: #E1AF93;
+}
+
+.hghg {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    width: 420px;
+}
+
+.kj  {
+    color: #fff; 
+    padding: 13px 59px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-inline: auto;
+    margin-top: 60px;
+    background-color: #E1AF93;
+    text-decoration-line: none;
+    width: max-content;
+    justify-content: center;
+    display: block;
+    margin-bottom: 230px;
+}
+
+.ipoteka-wrapper {
+    box-shadow: 0px 0px 30px 0px #0F11120D;
+    
+}
+
+
+.otziv-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #E1AF93;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration-line: none;
+}
+
+
+.hero-span-span {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0%;
+    color: #E1AF93;
+}
+
+
+
+.hero-novo-title {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0%;
+    color: #333333;
+}
+
+
+
+.hero-novo-item {
+    
+    
+    
+    h3 {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0%;
+        color: #333333;
+    }
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #858585;
+    }
+    
+}
+
+.kv {
+    background-color: #EDF3F5;
+}
+
+.kvartiri-btn {
+    border: none;
+    background-color: #333333;
+    
+}
+
+// .container {
+//     max-width: 1500px;
+//     width: 100%;
+//     margin-inline: auto;
+//     padding-inline: 20px;
+// }
+
+.kv-price {
+    color: #E1AF93;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    
+}
+
+.kv-img {
+    width: 400px;
+}
+
+.hh-section {
+    background-image: url("../../images/harhilbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.what-section {
+    background-color: #EDF3F5;
+}
+
+.what-inp {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #D6D6D6;
+    color: #333333;
+    width: 407px;
+}
+
+.what-wrapper {
+    padding: 60px;
+}
+
+.inpoots-link {
+    padding: 12px 71px;
+    background-color: #E1AF93;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    text-decoration-line: none;
+    width: 223px;
+    align-items: center;
+}
+
+.blog-section {
+    padding-block: 250px;
+}
+
+
+
+.b-item-link {
+    color: #E1AF93;
+    text-decoration-line: none;
+}
+
+
+.blogs-link {
+    padding: 16px 71px;
+    background-color:#E1AF93 ;
+    color:#fff ;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration-line: none;
+    margin-inline: auto;
+    display: block;
+    width: max-content;
+}
+
+.types {
+    padding-block: 250px;
+}
+
+
+.p-texts {
+    width: 230px;
+    margin-top: 50px;
+}
+
+.accordion-header {
+    font-size: 999px;
+
+}
