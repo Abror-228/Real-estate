@@ -67,6 +67,8 @@
     
 }
 
+
+
 .about-text {
     h2 {
         font-weight: 500;
@@ -339,7 +341,6 @@
     border: 0;
     border-bottom: 1px solid #D6D6D6;
     color: #333333;
-    width: 407px;
 }
 
 .what-wrapper {
@@ -397,5 +398,123 @@
 
 .accordion-header {
     font-size: 999px;
+}
 
+.r-list {
+    margin-block: 150px;
+}
+
+.r-item {
+    border: 1.67px solid gold;
+    border-radius: 15px;
+    width: 367px;
+}
+
+
+
+.spinner-wrapper {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s;
+    z-index: 1;
+}
+
+.spinner-border {
+    width: 80px;
+    height: 80px;
+}
+
+.hero {
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+.r-name {
+    margin-top: 44px;
+}
+
+.r-wrapper {
+    position: relative;
+}
+
+.h-anim {
+    position: absolute;
+    animation-name: realt;
+    animation-duration: 3.4s;
+    animation-iteration-count: infinite;
+}
+
+.k-anim {
+    right: 10px;
+    top: -67px;
+    position: absolute;
+    animation-name: realt;
+    animation-duration: 3.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes realt {
+
+    0% {
+        transform: rotate(-180deg);
+    }
+    
+    1% {
+        transform: rotate(-30deg);
+    }
+    
+    10% {
+        transform: rotate(-40deg);
+    }
+    
+    20% {
+        transform: rotate(-30deg);
+    }
+    
+    30% {
+        transform: rotate(0deg);
+    }
+    
+    40% {
+        transform: rotate(30deg);
+    }
+    
+    50% {
+        transform: rotate(40deg);
+    }
+    
+    60% {
+        transform: rotate(30deg);
+    }
+    
+    70% {
+        transform: rotate(0deg);
+    }
+    
+    80% {
+        transform: rotate(-30deg);
+    }
+    
+    90% {
+        transform: rotate(-40deg);
+    }
+    
+    100% {
+        transform: rotate(180deg);
+    }
+    
 }

@@ -10,11 +10,11 @@
 </head>
 <body>
     
-    <header class="site-header">
+    <header class="site-header" id="header">
         <div class="header-wrapper">
             <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex align-items-center">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./index.html">
                         <img src="./images/site-logo.svg" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,14 +33,14 @@
                                 </ul>
                             </li>
                             <li class="nav-item text-dark">
-                                <a class="nav-link active" aria-current="page" href="#">О нас</a>
+                                <a class="nav-link active" aria-current="page" href="about.html">О нас</a>
                             </li>
                             <li class="nav-item text-dark">
-                                <a class="nav-link" href="#">Блог</a>
+                                <a class="nav-link" href="vlog.html">Блог</a>
                             </li>
                             
                             <li class="nav-item text-dark">
-                                <a class="nav-link disabled" aria-disabled="true">Контакты</a>
+                                <a class="nav-link text-dark" href="./kon.html">Контакты</a>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center column-gap-3">
@@ -61,7 +61,7 @@
                                     Ru
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Eng</a></li>
+                                    <li><a class="dropdown-item" href="./engindex.html">Eng</a></li>
                                     <li><a class="dropdown-item" href="#">Uzb</a></li>
                                 </ul>
                             </div>
@@ -96,7 +96,7 @@
                                 </li>
                             </ul>
                         </li>
-
+                        
                         <li class="kv nav-item dropdown py-2 px-3 col-12 col-md-8 col-lg-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Цена
@@ -113,7 +113,7 @@
                                 </li>
                             </ul>
                         </li>
-
+                        
                         <li class="kv nav-item dropdown py-2 px-3 col-12 col-md-8 col-lg-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Тип жилья
@@ -130,7 +130,7 @@
                                 </li>
                             </ul>
                         </li>
-
+                        
                         <li class="kv nav-item dropdown py-2 px-3 col-12 col-md-8 col-lg-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Количество комнат
@@ -147,7 +147,7 @@
                                 </li>
                             </ul>
                         </li>
-
+                        
                         <li class="kv nav-item dropdown py-2 px-3 col-12 col-md-8 col-lg-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Срок сдачи
@@ -171,237 +171,238 @@
                         На карте
                     </button>
                 </div>
-
+                
                 <ul class="kv-list list-unstyled row row-gap-3">
+                    <!-- 1 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" src="./images/kvone.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $120 000
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 2 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv2.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $120 000
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 3 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv3.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $125 000
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 4 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv4.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $222 222
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 5 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv5.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $150 000
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 6 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv6.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $180 000
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 7 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv7.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $123 000
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 8 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv8.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $222 222
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 9 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv9.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $123 321
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 10 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv10.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в ЖК
+                            </h3>
+                            <p class="text-secondary">
+                                г.Андижан, Тимурийский район, 67 квартал, 52 дом, 456 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $1488
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 11 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px"src="./kvimgs/kv11.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в Хрущёвке
+                            </h3>
+                            <p class="text-secondary">
+                                г.Москва, Сталинградский район, 52 квартал, 67 дом, 7 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $1945
+                            </h3>
+                        </div>
+                        
+                    </li>
+                    <!-- 12 -->
+                    <li class="kv-item col-12 col-md-6 col-lg-4">
+                        
+                        <div class="kv-item-box">
+                            
+                            <img class="kv-img" width="400px" height="257px" src="./kvimgs/kv12.png" alt="">
+                            
+                            <h3 class="text-dark">
+                                Квартира в Сергили
+                            </h3>
+                            <p class="text-secondary">
+                                г.Ташкент, Сергилийский район, 13 квартал, 14 дом, 15 квартира
+                            </p>
+                            <h3 class="kv-price">
+                                $132 231
+                            </h3>
+                        </div>
+                        
+                    </li>
                     
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
-                    <li class="kv-item col-12 col-md-6 col-lg-4">
-
-                        <div class="kv-item-box">
-
-                            <img class="kv-img" src="./images/kvone.png" alt="">
-
-                            <h3 class="text-dark">
-                                Квартира в ЖК
-                            </h3>
-                            <p class="text-secondary">
-                                г.Ташкент, Юнусабадский район, 15 квартал, 28 дом, 32 квартира
-                            </p>
-                            <h3 class="kv-price">
-                                $120 000
-                            </h3>
-                        </div>
-                        
-                    </li>
-
+                    
                 </ul>
                 
             </div>
@@ -414,7 +415,7 @@
         <div class="container">
             <div class="footer-wrapper">
                 <div class="footer-top d-flex align-items-center justify-content-sm-between py-5">
-                    <a href="#">
+                    <a  href="#header">
                         <img src="./images/site-logo.svg" alt="">
                     </a>
                     <div class="socials d-flex align-items-center column-gap-2">
@@ -440,13 +441,13 @@
                             Услуги
                         </h3>
                         <div class="footer-desc">
-                            <a class="footer-link d-block" href="./allcards.html">
+                            <a class="footer-link d-block" href="#">
                                 Купить
                             </a>
                             <a class="footer-link d-block" href="./kvartiri.html">
                                 Арендовать
                             </a>
-                            <a class="footer-link d-block" href="./harhil.html">
+                            <a class="footer-link d-block" href="#">
                                 Продать
                             </a>
                             <a class="footer-link d-block" href="./otziv.html">
@@ -463,14 +464,11 @@
                             <a class="footer-link d-block" href="./kvartiri.html">
                                 Квартиры
                             </a>
-                            <a class="footer-link d-block" href="./novo.html">
+                            <a class="footer-link d-block" href="./rnovo.html">
                                 Новостройки
                             </a>
                             <a class="footer-link d-block" href="/index.html">
                                 Дома и участки
-                            </a>
-                            <a class="footer-link d-block" href="./harhil.html">
-                                Коммерческая
                             </a>
                         </div>
                     </li>
@@ -480,16 +478,16 @@
                             Компания
                         </h3>
                         <div class="footer-desc">
-                            <a class="footer-link d-block" href="">
+                            <a class="footer-link d-block" href="about.html">
                                 О нас
                             </a>
-                            <a class="footer-link d-block" href="">
+                            <a class="footer-link d-block" href="vlog.html">
                                 Блог
                             </a>
-                            <a class="footer-link d-block" href="">
+                            <a class="footer-link d-block" href="kon.html">
                                 Контакты
                             </a>
-                            <a class="footer-link d-block" href="">
+                            <a class="footer-link d-block" href="kon.html">
                                 Связаться
                             </a>
                         </div>
@@ -500,9 +498,6 @@
                             Другое
                         </h3>
                         <div class="footer-desc">
-                            <a class="footer-link d-block" href="">
-                                Ипотечный калькулятор
-                            </a>
                             <a class="footer-link d-block" href="./dubai.html">
                                 Инвестиции в недвижимость в Дубае
                             </a>
@@ -521,7 +516,7 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="./boostrab/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
