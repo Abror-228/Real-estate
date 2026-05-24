@@ -5,5 +5,5 @@ window.addEventListener("load", () => {
 
     setTimeout(() => {
         elSpinnerWrap.style.display = "none";
-    }, 1670)
+    }, 1067)
 });
